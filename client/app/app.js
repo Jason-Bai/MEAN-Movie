@@ -7,6 +7,9 @@ angular.module('app', [
   'signup',
   'me'
 ])
+.constant('configs', {
+  baseUrl: 'http://baiyu.socialmaster.com.cn'
+})
 .config(['$routeProvider', '$httpProvider', function ($routeProvider, $httpProvider) {
   // 后端设置的static属性为client，所有开头需要加上app
   var basePath = 'app/components/';
@@ -50,4 +53,7 @@ angular.module('app', [
       }
     };
   }]);
+}])
+.controller('HeaderCtrl', ['$scope', function ($scope) {
+  $scope.title = 'Movie';
 }]);
