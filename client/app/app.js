@@ -3,9 +3,11 @@ angular.module('app', [
   'ngRoute',
   // 加载需要的模块
   'home',
+  /*
   'signin',
   'signup',
   'me'
+  */
 ])
 .constant('configs', {
   baseUrl: 'http://baiyu.socialmaster.com.cn'

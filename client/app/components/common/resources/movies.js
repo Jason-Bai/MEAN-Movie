@@ -3,6 +3,10 @@ angular.module('resources.movies', ['resource']).
 
   var Movies = new Resource('movies');
 
+  Movies.getTopTen = function (successcb, errorcb) {
+    return Movies.all(successcb, errorcb);
+  };
+
   return Movies;
 
 }]);
