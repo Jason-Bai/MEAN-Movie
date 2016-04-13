@@ -10,7 +10,7 @@ angular.module('app', [
   */
 ])
 .constant('configs', {
-  baseUrl: 'http://baiyu.socialmaster.com.cn'
+  baseUrl: ''
 })
 .config(['$routeProvider', '$httpProvider', function ($routeProvider, $httpProvider) {
   // 后端设置的static属性为client，所有开头需要加上app
